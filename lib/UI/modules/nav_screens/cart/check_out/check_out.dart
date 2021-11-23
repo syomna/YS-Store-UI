@@ -186,8 +186,8 @@ class _CheckoutState extends State<Checkout> {
     }
     return FloatingActionButton(
       child: _processIndex == _processes.length - 1
-          ? const Icon(Ionicons.checkmark)
-          : const Icon(Icons.chevron_right),
+          ? const Icon(Ionicons.checkmark , color: Colors.white,)
+          : const Icon(Icons.chevron_right , color: Colors.white,),
       onPressed: () {
         setState(() {
           _processIndex = (_processIndex + 1) % _processes.length;

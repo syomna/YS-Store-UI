@@ -19,17 +19,12 @@ class BuildSmoothPageIndicator extends StatelessWidget {
     return SmoothPageIndicator(
       controller: pageController,
       count: list.length,
-      effect: isExpandingDots
-          ? ExpandingDotsEffect(
+      effect:  ExpandingDotsEffect(
               activeDotColor: kDefaultColor,
               dotWidth: 10,
               dotHeight: 10,
               dotColor: Colors.grey.withOpacity(0.4))
-          : WormEffect(
-              activeDotColor: kDefaultColor,
-              dotWidth: 10,
-              dotHeight: 10,
-              dotColor: Colors.grey.withOpacity(0.4)),
+         
     );
   }
 }

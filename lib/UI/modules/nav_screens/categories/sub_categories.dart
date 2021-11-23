@@ -59,10 +59,10 @@ class SubCategories extends StatelessWidget {
 
   Widget _body(context , List<ProductModel> collection) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(14),
       child: GridView.builder(
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 3, childAspectRatio: 0.6),
+            crossAxisCount: 2, childAspectRatio: 0.2),
         scrollDirection: Axis.vertical,
         itemBuilder: (contxet, index) =>
             InkWell(

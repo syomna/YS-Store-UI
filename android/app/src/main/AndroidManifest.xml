@@ -2,7 +2,7 @@
     package="com.yumi.shoptemplate">
    <uses-permission android:name="android.permission.INTERNET"/>
    <application
-        android:label="shoptemplate"
+        android:label="YS Store"
         android:icon="@mipmap/icon">
         <activity
             android:name=".MainActivity"

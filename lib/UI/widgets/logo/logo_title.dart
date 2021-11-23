@@ -13,20 +13,22 @@ class LogoTitle extends StatelessWidget {
       mainAxisAlignment: isBackgroundWhite
           ? MainAxisAlignment.center
           : MainAxisAlignment.start,
-      children: [
+      children: const [
         Text.rich(TextSpan(children: [
-          const TextSpan(text: 'YS ', style: TextStyle(color: kSecondaryColor)),
+         TextSpan(text: 'YS ', style: TextStyle(color: kDefaultColor)),
           TextSpan(
               text: 'Store',
-              style: TextStyle(
-                  color: isBackgroundWhite ? kDefaultColor : Colors.white))
+              // style: 
+              // TextStyle(
+              //     color: isBackgroundWhite ? kDefaultColor : Colors.white)
+                  )
         ])),
-        const SizedBox(
+       SizedBox(
           width: 4,
         ),
         Icon(
           Ionicons.bag,
-          color: isBackgroundWhite ? kSecondaryColor : Colors.white,
+       //   color: isBackgroundWhite ? kSecondaryColor : Colors.white,
         )
       ],
     );

@@ -19,7 +19,9 @@ class Preview extends StatelessWidget {
             child: ListView.separated(
                 itemBuilder: (context, index) {
                   return ListTile(
-                    title: Text('${cartProducts[index].title}'),
+                    title: Text('${cartProducts[index].title}' , style: const TextStyle(
+                      fontWeight: FontWeight.bold
+                    ),),
                     subtitle: Text(cartProducts[index].offerPrice != 0.0
                         ? '\$${cartProducts[index].offerPrice}'
                         : '\$${cartProducts[index].price}'),
@@ -29,7 +31,7 @@ class Preview extends StatelessWidget {
                         return const Icon(Icons.broken_image);
                       },
                     ),
-                    trailing: const Text('Quantity : x4'),
+                    trailing: const Text('Quantity : x2'),
                   );
                 },
                 separatorBuilder: (context, index) => const SizedBox(
@@ -40,8 +42,8 @@ class Preview extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: const [
-              Text('Fees :', style: TextStyle(fontWeight: FontWeight.bold)),
-              Text('\$20', style: TextStyle(fontWeight: FontWeight.bold)),
+              Text('Fees :', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w300)),
+              Text('\$20', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
             ],
           ),
           const SizedBox(
@@ -50,18 +52,21 @@ class Preview extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: const [
-              Text('Total :', style: TextStyle(fontWeight: FontWeight.bold)),
-              Text('\$1280', style: TextStyle(fontWeight: FontWeight.bold)),
+              Text('Total :', style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.w300)),
+              Text('\$380', style: TextStyle(fontSize: 16,  fontWeight: FontWeight.bold)),
             ],
           ),
           const SizedBox(height: 40),
           DefaultButton(
+            
               widget: const Text('Confirm' , style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.bold
               ),),
 
-              color: kSecondaryColor,
+              color: kDefaultColor,
               function: () {
                 navigateAndRemove(context, const Complete());
               })

@@ -24,48 +24,46 @@ class FavoriteCartItem extends StatelessWidget {
           color: Colors.red,
         ),
       ),
-      child: Card(
-        elevation: 2,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(10),
-        ),
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: ListTile(
-            onTap: () =>
-                navigateTo(context, ProductDetails(productModel: product)),
-            leading: Image(image: NetworkImage(product.images.first)),
-            title: Text('${product.title}'),
-            subtitle: Text(product.offerPrice != 0.0
-                ? '\$${product.offerPrice}'
-                : '\$${product.price}'),
-            trailing: isCart
-                ? Column(
-                    children: const [
-                      Expanded(
-                          child: Icon(
-                        Ionicons.add_circle,
-                        color: kDefaultColor,
-                      )),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      Expanded(child: Text('4')),
-                      Expanded(
-                          child: Icon(
-                        Ionicons.remove_circle,
-                        color: kDefaultColor,
-                      ))
-                    ],
-                  )
-                : MaterialButton(
-                    onPressed: () {},
-                    child: Text(
-                      product.inCart == true ? 'Added to cart' : 'Add to cart',
-                      style: TextStyle(color: product.inCart == true ? kSecondaryColor : kDefaultColor),
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: ListTile(
+          onTap: () =>
+              navigateTo(context, ProductDetails(productModel: product)),
+          leading: Image(image: NetworkImage(product.images.first)),
+          title: Text('${product.title}'),
+          subtitle: Text(product.offerPrice != 0.0
+              ? '\$${product.offerPrice}'
+              : '\$${product.price}'),
+          trailing: isCart
+              ? Column(
+                  children: const [
+                    Expanded(
+                        child: Icon(
+                      Ionicons.add_circle,
+                      color: kDefaultColor,
+                    )),
+                    SizedBox(
+                      height: 10,
                     ),
+                    Expanded(child: Text('4')),
+                    Expanded(
+                        child: Icon(
+                      Ionicons.remove_circle,
+                      color: kDefaultColor,
+                    ))
+                  ],
+                )
+              : MaterialButton(
+                  onPressed: () {},
+                  color: product.inCart == true ?  kDefaultColor : Colors.grey,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10)
                   ),
-          ),
+                  child: Text(
+                    product.inCart == true ? 'Added to cart' : 'Add to cart',
+                    style: const TextStyle(color: Colors.white , fontWeight: FontWeight.w300),
+                  ),
+                ),
         ),
       ),
     );

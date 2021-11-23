@@ -3,24 +3,24 @@ import 'package:shoptemplate/core/models/product_model.dart';
 List<Map<String, dynamic>> onBoarding = [
   {
     'image':
-        'https://image.freepik.com/free-vector/online-shopping-concept-illustration_114360-2159.jpg',
+        'assets/images/onBoardingOne.png',
     'title': 'Online Shopping',
     'subtitle':
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley.'
+        'We help you to get what you want in the most easiest way!'
   },
   {
     'image':
-        'https://image.freepik.com/free-vector/online-shopping-concept-illustration_114360-2159.jpg',
-    'title': 'Online Shopping',
+        'assets/images/onBoardingTwo.png',
+    'title': 'Buy Now!',
     'subtitle':
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley.'
+        'Collect your products to order them in one package!'
   },
 ];
 
 List<String> images = [
-  'https://image.freepik.com/free-vector/luxury-golden-geometric-shapes-sale-background_23-2148834930.jpg',
-  'https://image.freepik.com/free-vector/luxury-golden-geometric-shapes-sale-background_23-2148834930.jpg',
-  'https://image.freepik.com/free-vector/luxury-golden-geometric-shapes-sale-background_23-2148834930.jpg'
+  'https://img.freepik.com/free-vector/e-commerce-online-shopping-banner-template_82574-11343.jpg?size=626&ext=jpg',
+  'https://img.freepik.com/free-vector/e-commerce-online-shopping-banner-template_82574-11343.jpg?size=626&ext=jpg',
+  'https://img.freepik.com/free-vector/e-commerce-online-shopping-banner-template_82574-11343.jpg?size=626&ext=jpg'
 ];
 
 List<ProductModel> womenDresses = [
@@ -304,21 +304,22 @@ const String profileImage =
 
 List<ProductModel> cartProducts = [
     ProductModel(
-      id: '14',
-      title: 'Solid Blazer',
+      id: '3',
+      title: 'Hoodie',
       details:
           'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley.',
       category: 'Women',
-      subCategory: 'Blazer',
+      subCategory: 'Hoodies',
       images: [
-        'https://rukminim1.flixcart.com/image/714/857/blazer/3/g/h/1212243-marks-spencer-m-original-imaegwggpn7snezf.jpeg?q=50',
+        'https://i.pinimg.com/736x/d2/ab/62/d2ab6231affe89442e5ca41749b8a557.jpg',
+        'https://i.pinimg.com/736x/81/a3/93/81a393d0e67f0c2db0862967347608c8.jpg'
       ],
-      size: ['S', 'X', 'XL'],
+      size: ['XL', 'XX', 'Small'],
       colors: [0xFFf54242, 0xFFf54290, 0xFFf5bc42, 0xFF000000],
-      isFavorite: false,
-      inCart: true,
-      price: 300.00,
-      offerPrice: 240.00,
+      isFavorite: true,
+      inCart: false,
+      price: 100.00,
+      offerPrice: 0.0,
       rating: 5,
       quantity: 4),
   ProductModel(

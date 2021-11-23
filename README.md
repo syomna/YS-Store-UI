@@ -1,16 +1,39 @@
-# shoptemplate
+# YS Store - E-commerce app - Flutter UI
 
-A new Flutter project.
+This UI Kit contains 25+ Screens with different types of UI components; this kit can save your time to code all Front end layouts and it’s easy to implement with your code!. one the main thing is Its supports both platforms Android and ios.
+Readable code and reusable components so you can edit and customize it easily.
 
-## Getting Started
+## [Download The APK](https://drive.google.com/file/d/1mrwEwxWGNIYQA0qNYxL0WFjlQ-HrUir_/view?usp=sharing)
 
-This project is a starting point for a Flutter application.
+## Screens it contains:
 
-A few resources to get you started if this is your first Flutter project:
+=> Onboarding
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+=> Login
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+=> Forgot Password
+
+=> Sign Up
+
+=> Home Page
+
+=> Categories Page
+
+=> Product Details
+
+=> Add to Favorites
+
+=> Add to Cart
+
+=> Checkout Timeline
+
+=> Profile
+
+=> Add Your Addresses and Cards
+
+=> Order History
+
+=> Bottom Navigation Bar
+
+Feel free to contact me! 🙏 
+

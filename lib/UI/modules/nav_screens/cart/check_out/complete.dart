@@ -36,9 +36,9 @@ class Complete extends StatelessWidget {
             DefaultButton(
                 widget: const Text(
                   'Continue Browsing',
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(color: Colors.white , fontSize: 16 , fontWeight: FontWeight.w300),
                 ),
-                color: kSecondaryColor,
+                color: kDefaultColor,
                 function: () {
                   navigateAndRemove(context, const Layout());
                 })

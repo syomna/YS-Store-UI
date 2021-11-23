@@ -44,22 +44,23 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                   children: [
                     Image(
                         height: 300.sp,
-                        errorBuilder: (context , child , stack) => const Icon(Icons.broken_image),
-                        image: NetworkImage(onBoarding[index]['image'] )),
+                        errorBuilder: (context, child, stack) =>
+                            const Icon(Icons.broken_image),
+                        image: AssetImage(onBoarding[index]['image'])),
                     const SizedBox(
                       height: 20,
                     ),
-                    ListTile(
-                      title: Text(
-                        onBoarding[index]['title'],
-                        textAlign: TextAlign.center,
-                        style: TextStyle(fontSize: 24.sp),
-                      ),
-                      subtitle: Text(
-                        onBoarding[index]['subtitle'],
-                        textAlign: TextAlign.center,
-                      ),
-                    )
+                    Text(
+                      onBoarding[index]['title'],
+                      textAlign: TextAlign.center,
+                      style: TextStyle(fontSize: 24.sp),
+                    ),
+                    const SizedBox(height: 10,),
+                    Text(
+                      onBoarding[index]['subtitle'],
+                      style: TextStyle(fontSize: 16.sp , color: Colors.grey.shade700),
+                      textAlign: TextAlign.center,
+                    ),
                   ],
                 );
               }),

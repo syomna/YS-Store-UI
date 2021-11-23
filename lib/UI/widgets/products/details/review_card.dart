@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:shoptemplate/UI/widgets/rating_widget/custom_rating.dart';
-import 'package:shoptemplate/UI/styles/styles.dart';
 
 class ReviewCard extends StatelessWidget {
   const ReviewCard(
@@ -22,9 +21,6 @@ class ReviewCard extends StatelessWidget {
     return Container(
       height: MediaQuery.of(context).size.height * 0.12,
       padding: const EdgeInsets.all(8),
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20),
-          border: Border.all(color: kDefaultColor)),
       child: Row(
         children: [
         CircleAvatar(
@@ -43,7 +39,8 @@ class ReviewCard extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  Text(name),
+                  Text(name , style: const TextStyle(fontWeight: FontWeight.bold),
+                  ),
                   const SizedBox(
                     width: 10,
                   ),
@@ -57,7 +54,7 @@ class ReviewCard extends StatelessWidget {
                 review,
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
-                style: const TextStyle(fontWeight: FontWeight.bold),
+                
               ),
             ],
           )

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:shoptemplate/UI/modules/nav_screens/home/details/product_details.dart';
-import 'package:shoptemplate/UI/styles/styles.dart';
 import 'package:shoptemplate/UI/widgets/components/components.dart';
 import 'package:shoptemplate/core/data/dummy_data.dart';
 
@@ -20,14 +19,11 @@ class OrderHistory extends StatelessWidget {
           children: [
             Card(
               elevation: 2,
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10),
-                  side: const BorderSide(color: kDefaultColor)),
               child: Padding(
                   padding: const EdgeInsets.all(10),
                   child: InkWell(
                     onTap: () => navigateTo(
-                        context, ProductDetails(productModel: products[0])),
+                        context, ProductDetails(productModel: cartProducts[0])),
                     child: Column(
                       children: [
                         SizedBox(
@@ -36,13 +32,14 @@ class OrderHistory extends StatelessWidget {
                             children: [
                               Image(
                                   image:
-                                      NetworkImage(products[0].images.first)),
+                                      NetworkImage(cartProducts[0].images.first)),
                               const SizedBox(
                                 width: 10,
                               ),
                               Text(
-                                '${products[0].title} x2',
+                                '${cartProducts[0].title} x2',
                                 style: const TextStyle(
+                                  fontSize: 16,
                                     fontWeight: FontWeight.bold),
                               )
                             ],
@@ -54,7 +51,7 @@ class OrderHistory extends StatelessWidget {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                            _orderInfo('Price', '\$400'),
+                            _orderInfo('Price', '\$200'),
                             _orderInfo('Payment', 'Cash'),
                             _orderInfo('Status', 'Delivered'),
                           ],

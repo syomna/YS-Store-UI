@@ -21,7 +21,7 @@ class AllProducts extends StatelessWidget {
         padding: const EdgeInsets.all(8.0),
         child: GridView.builder(
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 3, childAspectRatio: 0.55),
+                crossAxisCount: 2, childAspectRatio: 0.65),
             itemCount: isOffers ? salesProducts.length : products.length,
             scrollDirection: Axis.vertical,
             itemBuilder: (context, index) {

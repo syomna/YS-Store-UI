@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
-import 'package:shoptemplate/UI/modules/nav_screens/cart/cart.dart';
+import 'package:shoptemplate/UI/modules/nav_screens/favorite/favorite.dart';
 import 'package:shoptemplate/UI/modules/nav_screens/profile/info/addresses/address.dart';
 import 'package:shoptemplate/UI/modules/nav_screens/profile/info/payment/cards.dart';
 import 'package:shoptemplate/UI/modules/nav_screens/profile/info/edit_profile.dart';
@@ -50,10 +50,10 @@ class Profile extends StatelessWidget {
           height: 8,
         ),
         ProfileOptions(
-          text: 'My Cart',
-          icon: Ionicons.bag,
+          text: 'My Favorites',
+          icon: Ionicons.heart,
           function: () {
-            navigateTo(context, const Cart());
+            navigateTo(context, const Favorite());
           },
         ),
         const SizedBox(

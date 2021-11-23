@@ -22,15 +22,16 @@ class AvaliableList extends StatelessWidget {
             children: list.map((e) {
               if (isSize) {
                 return Container(
-                  padding: const EdgeInsets.all(8),
+                  padding: const EdgeInsets.symmetric( horizontal : 8),
                   margin: const EdgeInsets.symmetric(horizontal: 4),
                   decoration: BoxDecoration(
-                      color: kSecondaryColor,
-                      borderRadius: BorderRadius.circular(10)),
+                      border: Border.all(
+                        color: kSecondaryColor
+                      ),
+                      borderRadius: BorderRadius.circular(4)),
                   child: Center(
                     child: Text(
                       e,
-                      style: const TextStyle(color: Colors.white),
                     ),
                   ),
                 );

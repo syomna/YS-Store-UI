@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 
 class ImageSlider extends StatelessWidget {
   const ImageSlider(
-      {Key? key,
-      required this.pageController,
-      required this.imagesList})
+      {Key? key, required this.pageController, required this.imagesList})
       : super(key: key);
 
   final PageController pageController;

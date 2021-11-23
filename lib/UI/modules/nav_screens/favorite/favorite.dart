@@ -8,25 +8,21 @@ class Favorite extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-        return Scaffold(
-          appBar: AppBar(
-            title: const Text('My Favorites'),
-          ),
-          body: Padding(
-            padding: const EdgeInsets.all(10),
-            child: ListView.separated(
-                    itemBuilder: (contxet, index) {
-                      return FavoriteCartItem(
-                       product : salesProducts[index]
-                      );
-                    },
-                    separatorBuilder: (context, index) {
-                      return const SizedBox(
-                        height: 10,
-                      );
-                    },
-                    itemCount: salesProducts.length),
-          ),
-        );
-      }
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('My Favorites'),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(10),
+        child: ListView.separated(
+            itemBuilder: (contxet, index) {
+              return FavoriteCartItem(product: salesProducts[index]);
+            },
+            separatorBuilder: (context, index) {
+              return const Divider();
+            },
+            itemCount: salesProducts.length),
+      ),
+    );
+  }
 }
