@@ -4,31 +4,31 @@
 
 ## Screens it contains:
 
-=> Onboarding
+- Onboarding
 
-=> Login
+- Login
 
-=> Forgot Password
+- Forgot Password
 
-=> Sign Up
+- Sign Up
 
-=> Home Page
+- Home Page
 
-=> Categories Page
+- Categories Page
 
-=> Product Details
+- Product Details
 
-=> Add to Favorites
+- Add to Favorites
 
-=> Add to Cart
+- Add to Cart
 
-=> Checkout Timeline
+- Checkout Timeline
 
-=> Profile
+- Profile
 
-=> Add Your Addresses and Cards
+- Add Your Addresses and Cards
 
-=> Order History
+- Order History
 
-=> Bottom Navigation Bar 
+- Bottom Navigation Bar 
 
